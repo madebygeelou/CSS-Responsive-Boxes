@@ -1,4 +1,54 @@
 body {
+  margin:0;
   background: papayawhip;
+}
+
+.container{
+  border: 1px solid black;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.maingroup {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 5;
+}
+
+.a {
+  border: 1px solid black;
+  max-height: 30vh;
+  flex-grow:1;
+  width:100%;
+}
+
+.b {
+  border: 1px solid black;
+  min-height: 30vh;
+  flex-grow:1;
+  width:100%
+}
+
+.c, .d, .e {
+  border: 1px solid black;
+  flex-grow: 1;
+  min-height: 20vh;
+}
+
+.f {
+  border: 1px solid black;
+  min-width: 20vw;
+  flex-grow:1;
+}
+
+@media (min-width:600px){
+.container{
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 }
 
